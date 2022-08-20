@@ -93,3 +93,63 @@
 - 사용한 툴 : BurpSuite
 - 기능이 완성된 하람, 여진, 필중, 교현의 웹사이트를 대상으로 점검 수행
 
+
+# 🌟 OWASP Juice Shop CTF
+## OWASP Top 10이란?
+[OWASP Top 10:2021](https://owasp.org/Top10/)
+
+## OWASP Juice Shop
+- OWASP 재단에서 OWASP Top 10 취약점에 대한 교육을 위해 제작한 취약한 웹사이트
+- 특정 취약점을 유도하면 FLAG 획득 가능
+
+## 환경 설치
+1. docker 설치
+    
+    ```bash
+    $sudo apt-get install -y docker.io
+    ```
+    
+2. owasp-juice 설치
+    
+    ```bash
+    $sudo docker run -d -e "NODE_ENV=ctf" -p 3000:3000 bkimminich/juice-shop
+    ```
+    
+
+3. AWS 포트 열기
+    1. EC2 인스턴스 찾기
+    2. 인스턴스 ID 클릭       
+    3. 보안 > 보안 그룹 클릭
+    4. 인바운드 규칙 편집 > 다음과 같이 인바운드 규칙 추가
+
+[http://54.144.125.125:4000/](http://54.144.125.125:4000/)
+![image](https://user-images.githubusercontent.com/33647663/185735629-769e8706-1bbd-42bb-ad71-eb4dcf44d96b.png)
+
+## FLAG 제출 사이트
+[http://54.144.125.125:8000](http://54.144.125.125:8000/)
+
+![image](https://user-images.githubusercontent.com/33647663/185735676-8aa04901-b509-48d9-88a7-24e96855ba17.png)
+
+# 🏆 Web - Advanced
+## 1. Vulnerable Web ( 필중 여진 하람 지우 )
+
+- 예시 - xxe 취약점이 가능하도록 기능을 넣어보기, HTTP Header XSS 가 가능하도록 기능을 넣어보기, Upload 기능에서 필터링을 구현했지만 우회가 가능하도록 구현해보기 등등
+- 요구사항
+    - 관련된 취약점이 무엇인지
+    - 취약점이 발생하는 이유(코드상에서 어떠한 로직, 함수, 변수 때문)
+    - 해당 취약점으로 가능한 공격(쉘 획득, 데이터 유출, dos 등..) → 시연도 하기
+    - 2 ~ 3개 정도
+
+## 2. CTF WriteUp ( 진우 교현 )
+
+- OWASP Juice All Clear
+- 요구사항
+    - 풀이과정이 포함된 Write Up
+
+## 3. Create CTF ( 필중 하람 )
+
+- 웹 해킹 관련 CTF 문제 제작하기
+- 요구사항
+    - Docker ( 너무 쉬운거면 안해도 되긴 함 ) ~~그래도 해 그냥~~
+    - FLAG 출력
+
