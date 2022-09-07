@@ -130,9 +130,12 @@
 
 ![image](https://user-images.githubusercontent.com/33647663/185735676-8aa04901-b509-48d9-88a7-24e96855ba17.png)
 
-# 🏆 Web - Advanced
-## 1. Vulnerable Web ( 필중 여진 하람 지우 )
+### 최종 점수
+![image](https://user-images.githubusercontent.com/33647663/188826181-c5e17638-fe86-4050-8f8c-53fa9979cc99.png)
 
+
+# 🏆 Web - Advanced
+## 1. Vulnerable Web 
 - 예시 - xxe 취약점이 가능하도록 기능을 넣어보기, HTTP Header XSS 가 가능하도록 기능을 넣어보기, Upload 기능에서 필터링을 구현했지만 우회가 가능하도록 구현해보기 등등
 - 요구사항
     - 관련된 취약점이 무엇인지
@@ -140,16 +143,14 @@
     - 해당 취약점으로 가능한 공격(쉘 획득, 데이터 유출, dos 등..) → 시연도 하기
     - 2 ~ 3개 정도
 
-## 2. CTF WriteUp ( 진우 교현 )
-
+## 2. CTF WriteUp 
 - OWASP Juice All Clear
 - 요구사항
     - 풀이과정이 포함된 Write Up
 
-## 3. Create CTF ( 필중 하람 )
-
+## 3. Create CTF 
 - 웹 해킹 관련 CTF 문제 제작하기
 - 요구사항
-    - Docker ( 너무 쉬운거면 안해도 되긴 함 ) ~~그래도 해 그냥~~
+    - Docker 
     - FLAG 출력
 
